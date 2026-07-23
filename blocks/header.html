@@ -1,18 +1,31 @@
 <!-- ==================== ШАПКА САЙТА BANKET-NA5.RU ==================== -->
 <!-- Перед вставкой в Tilda проверьте плейсхолдер e-mail -->
+<!-- ЦВЕТА (--bn5-bg / --bn5-bg-2 / --bn5-text / --bn5-accent) подобраны по скриншотам и требуют сверки с реальным сайтом -->
 <header class="bn5-header" id="bn5-header">
+
+  <div class="bn5-topbar">
+    <div class="bn5-topbar__inner">
+      <div class="bn5-topbar__contacts">
+        <a href="tel:+78632563530" class="bn5-header__contact" aria-label="Позвонить">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8C8 13.6 10.4 16 13.2 17.4l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2 2.2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          <span>+7 (863) 256-35-30</span>
+        </a>
+        <a href="mailto:banket@donexpocentre.ru" class="bn5-header__contact bn5-header__contact--email" aria-label="Написать на почту">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M3 6.5h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-11Z" stroke="currentColor" stroke-width="1.4"/><path d="m3.5 7 8 6 8-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>banket@donexpocentre.ru</span>
+        </a>
+      </div>
+      <a href="#request-date" class="bn5-header__cta">Получить расчёт</a>
+    </div>
+  </div>
+
   <div class="bn5-header__inner">
 
-    <a href="/" class="bn5-header__logo" aria-label="БанкетХолл — на главную">
-      <img src="https://www.donexpocentre.ru/media/filer_public/gg/lumisfera.jpg" alt="БанкетХолл — логотип">
-    </a>
-
-    <nav class="bn5-nav" aria-label="Главное меню">
+    <nav class="bn5-nav bn5-nav--left" aria-label="Главное меню">
       <ul class="bn5-nav__list">
         <li class="bn5-nav__item">
           <a href="/">Главная</a>
         </li>
-
         <li class="bn5-nav__item bn5-nav__item--dropdown">
           <a href="/zaly" class="bn5-nav__toggle">
             Залы
@@ -24,7 +37,6 @@
             <li><a href="/zaly/vystavochny">Выставочный зал <span>до 2 500 гостей</span></a></li>
           </ul>
         </li>
-
         <li class="bn5-nav__item bn5-nav__item--dropdown">
           <a href="/meropriyatiya" class="bn5-nav__toggle">
             Мероприятия
@@ -39,25 +51,21 @@
             <li><a href="/detskiy-prazdnik">Детские праздники</a></li>
           </ul>
         </li>
+      </ul>
+    </nav>
 
+    <a href="/" class="bn5-header__logo" aria-label="БанкетХолл — на главную">
+      <img src="https://www.donexpocentre.ru/media/filer_public/GG/logo%20b.png" alt="БанкетХолл — логотип">
+    </a>
+
+    <nav class="bn5-nav bn5-nav--right" aria-label="Дополнительное меню">
+      <ul class="bn5-nav__list">
         <li class="bn5-nav__item"><a href="/kejtering">Кейтеринг</a></li>
         <li class="bn5-nav__item"><a href="/arenda-oborudovaniya">Оборудование</a></li>
         <li class="bn5-nav__item"><a href="/galereya">Галерея</a></li>
         <li class="bn5-nav__item"><a href="/contacts">Контакты</a></li>
       </ul>
     </nav>
-
-    <div class="bn5-header__actions">
-      <a href="tel:+78632563530" class="bn5-header__contact" aria-label="Позвонить">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8C8 13.6 10.4 16 13.2 17.4l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2 2.2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-        <span>+7 (863) 256-35-30</span>
-      </a>
-      <a href="mailto:banket@donexpocentre.ru" class="bn5-header__contact bn5-header__contact--email" aria-label="Написать на почту">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M3 6.5h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-11Z" stroke="currentColor" stroke-width="1.5"/><path d="m3.5 7 8 6 8-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-
-      <a href="#request-date" class="bn5-header__cta">Проверить свободную дату</a>
-    </div>
 
     <button class="bn5-header__burger" id="bn5-burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="bn5-mobile-panel">
       <span></span><span></span><span></span>
@@ -94,7 +102,7 @@
     <div class="bn5-mobile-actions">
       <a href="tel:+78632563530">+7 (863) 256-35-30</a>
       <a href="mailto:banket@donexpocentre.ru">banket@donexpocentre.ru</a>
-      <a href="#request-date" class="bn5-header__cta">Проверить свободную дату</a>
+      <a href="#request-date" class="bn5-header__cta">Получить расчёт</a>
     </div>
   </div>
 </header>
@@ -118,22 +126,34 @@
   #bn5-header a{color:inherit; text-decoration:none;}
   #bn5-header ul{list-style:none; margin:0; padding:0;}
 
-  .bn5-header__inner{
-    max-width:1360px; margin:0 auto; padding:0 24px;
-    display:flex; align-items:center; gap:28px; height:76px;
+  /* ---- тонкая верхняя строка: контакты + CTA ---- */
+  .bn5-topbar{border-bottom:1px solid rgba(245,240,230,.12);}
+  .bn5-topbar__inner{
+    max-width:1440px; margin:0 auto; padding:0 32px;
+    display:flex; align-items:center; justify-content:space-between; height:46px;
   }
-  .bn5-header__logo{display:flex; align-items:center; flex-shrink:0;}
-  .bn5-header__logo img{height:38px; width:auto; display:block;}
+  .bn5-topbar__contacts{display:flex; align-items:center; gap:28px;}
 
-  .bn5-nav{flex:1; min-width:0;}
-  .bn5-nav__list{display:flex; align-items:center; gap:22px;}
+  /* ---- основная строка: навигация + центрированный логотип ---- */
+  .bn5-header__inner{
+    max-width:1440px; margin:0 auto; padding:0 32px;
+    display:grid; grid-template-columns:1fr auto 1fr; align-items:center;
+    height:112px; gap:20px;
+  }
+  .bn5-header__logo{display:flex; align-items:center; justify-self:center; flex-shrink:0;}
+  .bn5-header__logo img{height:64px; width:auto; display:block;}
+
+  .bn5-nav--left{justify-self:end;}
+  .bn5-nav--right{justify-self:start;}
+  .bn5-nav__list{display:flex; align-items:center; gap:30px;}
   .bn5-nav__item > a{
-    font-size:14.5px; padding:8px 2px; position:relative; display:inline-flex; align-items:center; gap:5px;
+    font-size:14px; font-weight:500; text-transform:uppercase; letter-spacing:.08em;
+    padding:8px 2px; position:relative; display:inline-flex; align-items:center; gap:6px;
     transition:color .15s;
   }
   .bn5-nav__item > a:hover{color:var(--bn5-accent-2);}
   .bn5-nav__item > a::after{
-    content:''; position:absolute; left:0; right:0; bottom:0; height:2px;
+    content:''; position:absolute; left:0; right:0; bottom:0; height:1px;
     background:var(--bn5-accent); transform:scaleX(0); transform-origin:left; transition:transform .2s;
   }
   .bn5-nav__item > a:hover::after{transform:scaleX(1);}
@@ -141,9 +161,9 @@
 
   .bn5-nav__item--dropdown{position:relative;}
   .bn5-dropdown{
-    position:absolute; top:100%; left:0; min-width:240px;
-    background:var(--bn5-bg-2); border-radius:8px; padding:8px;
-    box-shadow:0 12px 28px rgba(0,0,0,.35);
+    position:absolute; top:100%; left:0; min-width:260px;
+    background:var(--bn5-bg-2); border-radius:6px; padding:10px;
+    box-shadow:0 16px 32px rgba(0,0,0,.4);
     opacity:0; visibility:hidden; transform:translateY(6px);
     transition:opacity .18s, transform .18s, visibility .18s;
   }
@@ -154,24 +174,26 @@
   .bn5-nav__item--dropdown:hover .bn5-nav__arrow{transform:rotate(180deg);}
   .bn5-dropdown li a{
     display:flex; justify-content:space-between; gap:10px;
-    padding:9px 10px; border-radius:5px; font-size:14px;
+    padding:11px 12px; border-radius:4px; font-size:14px;
+    text-transform:none; letter-spacing:normal; font-weight:400;
   }
   .bn5-dropdown li a:hover{background:rgba(255,255,255,.06); color:var(--bn5-accent-2);}
   .bn5-dropdown li a span{color:var(--bn5-text-dim); font-size:12px; white-space:nowrap;}
 
-  .bn5-header__actions{display:flex; align-items:center; gap:14px; flex-shrink:0;}
-  .bn5-header__contact{display:flex; align-items:center; gap:6px; font-size:14px; white-space:nowrap;}
+  /* ---- контакты и кнопка (используются в topbar и в мобильном меню) ---- */
+  .bn5-header__contact{display:flex; align-items:center; gap:8px; font-size:14.5px; white-space:nowrap;}
   .bn5-header__contact:hover{color:var(--bn5-accent-2);}
-  .bn5-header__contact--email span{display:none;}
+  .bn5-header__contact svg{flex-shrink:0;}
   .bn5-header__cta{
-    background:var(--bn5-accent); color:var(--bn5-bg); font-weight:600; font-size:14px;
-    padding:11px 18px; border-radius:6px; white-space:nowrap; transition:background .15s;
+    background:var(--bn5-accent); color:var(--bn5-bg); font-weight:700; font-size:13.5px;
+    text-transform:uppercase; letter-spacing:.06em;
+    padding:13px 30px; border-radius:4px; white-space:nowrap; transition:background .15s;
   }
   .bn5-header__cta:hover{background:var(--bn5-accent-2);}
 
   .bn5-header__burger{
     display:none; width:32px; height:32px; flex-direction:column; justify-content:center; gap:6px;
-    background:none; border:none; cursor:pointer; flex-shrink:0;
+    background:none; border:none; cursor:pointer; flex-shrink:0; justify-self:end;
   }
   .bn5-header__burger span{display:block; height:2px; background:var(--bn5-text); border-radius:2px; transition:.2s;}
   .bn5-header__burger[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg);}
@@ -198,10 +220,14 @@
   .bn5-mobile-actions .bn5-header__cta{text-align:center;}
 
   @media (max-width: 1023px){
-    .bn5-nav, .bn5-header__contact, .bn5-header__cta{display:none;}
-    .bn5-header__burger{display:flex;}
+    .bn5-topbar, .bn5-nav--left, .bn5-nav--right{display:none;}
+    .bn5-header__inner{
+      display:flex; justify-content:space-between; height:72px; padding:0 20px;
+    }
+    .bn5-header__logo{justify-self:auto;}
+    .bn5-header__logo img{height:44px;}
+    .bn5-header__burger{display:flex; justify-self:auto;}
     .bn5-mobile-panel{display:block;}
-    .bn5-header__inner{height:64px;}
   }
 </style>
 
