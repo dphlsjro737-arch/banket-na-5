@@ -1,10 +1,10 @@
 <!-- ==================== ШАПКА САЙТА BANKET-NA5.RU ==================== -->
-<!-- Перед вставкой в Tilda замените плейсхолдеры: телефон, e-mail, ссылки MAX/Telegram -->
+<!-- Перед вставкой в Tilda замените плейсхолдеры: ссылку на логотип (СЮДА_ССЫЛКУ_ЛОГО) и e-mail -->
 <header class="bn5-header" id="bn5-header">
   <div class="bn5-header__inner">
 
     <a href="/" class="bn5-header__logo" aria-label="БанкетХолл — на главную">
-      БАНКЕТ<span>ХОЛЛ</span>
+      <img src="СЮДА_ССЫЛКУ_ЛОГО" alt="БанкетХолл — логотип">
     </a>
 
     <nav class="bn5-nav" aria-label="Главное меню">
@@ -48,19 +48,12 @@
     </nav>
 
     <div class="bn5-header__actions">
-      <a href="tel:+7XXXXXXXXXX" class="bn5-header__contact" aria-label="Позвонить">
+      <a href="tel:+78632563530" class="bn5-header__contact" aria-label="Позвонить">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8C8 13.6 10.4 16 13.2 17.4l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2 2.2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-        <span>+7 (XXX) XXX-XX-XX</span>
+        <span>+7 (863) 256-35-30</span>
       </a>
       <a href="mailto:banket@donexpocentre.ru" class="bn5-header__contact bn5-header__contact--email" aria-label="Написать на почту">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M3 6.5h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-11Z" stroke="currentColor" stroke-width="1.5"/><path d="m3.5 7 8 6 8-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-
-      <a href="https://max.ru/REPLACE" class="bn5-header__icon" aria-label="Написать в MAX" title="MAX">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10.5" stroke="currentColor" stroke-width="1.4"/><text x="12" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="currentColor" font-family="Arial">M</text></svg>
-      </a>
-      <a href="https://t.me/REPLACE" class="bn5-header__icon" aria-label="Написать в Telegram" title="Telegram">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21.5 3.5 2.8 10.9c-1 .4-1 1.5.1 1.8l4.6 1.4 1.8 5.6c.3.9 1.5 1.1 2.1.3l2.5-3.1 4.7 3.5c.9.6 2.1.1 2.3-1L23 5c.2-1.1-.7-1.9-1.7-1.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M8.5 14 18 6.5 9.8 15.3" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
       </a>
 
       <a href="#request-date" class="bn5-header__cta">Проверить свободную дату</a>
@@ -99,7 +92,7 @@
       <li><a href="/contacts">Контакты</a></li>
     </ul>
     <div class="bn5-mobile-actions">
-      <a href="tel:+7XXXXXXXXXX">+7 (XXX) XXX-XX-XX</a>
+      <a href="tel:+78632563530">+7 (863) 256-35-30</a>
       <a href="mailto:banket@donexpocentre.ru">banket@donexpocentre.ru</a>
       <a href="#request-date" class="bn5-header__cta">Проверить свободную дату</a>
     </div>
@@ -108,13 +101,12 @@
 
 <style>
   #bn5-header{
-    --bn5-bg:#191A1E;
-    --bn5-bg-2:#232429;
-    --bn5-text:#F2EFE8;
-    --bn5-text-dim:#A9A79F;
-    --bn5-accent:#B8935B;
-    --bn5-accent-2:#D4AF7A;
-    --bn5-font-logo:'Playfair Display', Georgia, serif;
+    --bn5-bg:#1E3D3B;
+    --bn5-bg-2:#274944;
+    --bn5-text:#F5F0E6;
+    --bn5-text-dim:#D9D2C2;
+    --bn5-accent:#F5F0E6;
+    --bn5-accent-2:#D9D2C2;
     --bn5-font-body:'Inter', Arial, sans-serif;
     font-family:var(--bn5-font-body);
     background:var(--bn5-bg);
@@ -130,11 +122,8 @@
     max-width:1360px; margin:0 auto; padding:0 24px;
     display:flex; align-items:center; gap:28px; height:76px;
   }
-  .bn5-header__logo{
-    font-family:var(--bn5-font-logo); font-size:20px; letter-spacing:.06em;
-    white-space:nowrap; flex-shrink:0;
-  }
-  .bn5-header__logo span{color:var(--bn5-accent-2); font-weight:600;}
+  .bn5-header__logo{display:flex; align-items:center; flex-shrink:0;}
+  .bn5-header__logo img{height:38px; width:auto; display:block;}
 
   .bn5-nav{flex:1; min-width:0;}
   .bn5-nav__list{display:flex; align-items:center; gap:22px;}
@@ -174,13 +163,8 @@
   .bn5-header__contact{display:flex; align-items:center; gap:6px; font-size:14px; white-space:nowrap;}
   .bn5-header__contact:hover{color:var(--bn5-accent-2);}
   .bn5-header__contact--email span{display:none;}
-  .bn5-header__icon{
-    width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center;
-    border:1px solid rgba(255,255,255,.18); color:var(--bn5-text-dim); transition:.15s;
-  }
-  .bn5-header__icon:hover{border-color:var(--bn5-accent); color:var(--bn5-accent-2);}
   .bn5-header__cta{
-    background:var(--bn5-accent); color:#161616; font-weight:600; font-size:14px;
+    background:var(--bn5-accent); color:var(--bn5-bg); font-weight:600; font-size:14px;
     padding:11px 18px; border-radius:6px; white-space:nowrap; transition:background .15s;
   }
   .bn5-header__cta:hover{background:var(--bn5-accent-2);}
@@ -218,9 +202,6 @@
     .bn5-header__burger{display:flex;}
     .bn5-mobile-panel{display:block;}
     .bn5-header__inner{height:64px;}
-  }
-  @media (max-width: 480px){
-    .bn5-header__icon{width:30px; height:30px;}
   }
 </style>
 
