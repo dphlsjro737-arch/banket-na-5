@@ -1,0 +1,25 @@
+<!-- ШАБЛОН ХЛЕБНЫХ КРОШЕК — копировать на каждую внутреннюю страницу, -->
+<!-- меняя пункты меню, ссылки и JSON-LD под конкретную страницу -->
+<nav class="bn5-crumbs" aria-label="Хлебные крошки">
+  <a href="/">Главная</a>
+  <span>/</span>
+  <a href="/zaly">Залы</a>
+  <span>/</span>
+  <span aria-current="page">Банкетный зал</span>
+</nav>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://banket-na5.ru/"},
+    {"@type": "ListItem", "position": 2, "name": "Залы", "item": "https://banket-na5.ru/zaly"},
+    {"@type": "ListItem", "position": 3, "name": "Банкетный зал", "item": "https://banket-na5.ru/zaly/bankethall"}
+  ]
+}
+</script>
+<style>
+  .bn5-crumbs{max-width:1360px; margin:0 auto; padding:14px 24px; font-size:13px; color:#8b8a85; display:flex; gap:6px; flex-wrap:wrap;}
+  .bn5-crumbs a{color:#8b8a85; text-decoration:none;}
+  .bn5-crumbs a:hover{color:#B8935B;}
+</style>
