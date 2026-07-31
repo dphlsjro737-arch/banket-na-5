@@ -52,9 +52,11 @@
     </nav>
 
     <div class="bn5-header__actions">
-      <a href="tel:+78632563530" class="bn5-header__contact" aria-label="Позвонить">
-        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8C8 13.6 10.4 16 13.2 17.4l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2 2.2Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
-        <span>+7 (863) 256-35-30</span>
+      <a href="tel:+78632563530" class="bn5-header__phone" aria-label="Позвонить +7 (863) 256-35-30">
+        <span class="bn5-header__icon bn5-header__phone-badge">
+          <img src="data:image/png;base64,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" alt="" class="bn5-header__icon-img" width="160" height="160">
+        </span>
+        <span class="bn5-header__phone-number">+7 (863) 256-35-30</span>
       </a>
 
       <a href="https://max.ru/REPLACE" class="bn5-header__icon" aria-label="Написать в MAX" title="MAX">
@@ -146,15 +148,15 @@
   #bn5-header, #bn5-header input, #bn5-header button{font-family:var(--bn5-font-body);}
 
   .bn5-header__inner{
-    max-width:1360px; margin:0 auto; padding:0 24px;
-    display:flex; align-items:center; gap:clamp(10px, 1.6vw, 28px); height:80px;
+    max-width:1420px; margin:0 auto; padding:0 24px;
+    display:flex; align-items:center; gap:clamp(10px, 1.6vw, 28px); height:88px;
   }
 
   .bn5-header__logo{
     display:flex; align-items:center; flex-shrink:0; position:relative; padding:6px 0;
   }
   .bn5-header__logo-img{
-    height:44px; width:auto; display:block;
+    height:50px; width:auto; display:block;
     filter:drop-shadow(0 2px 4px rgba(0,0,0,.35));
   }
   .bn5-header__logo::after{
@@ -181,9 +183,9 @@
   }
 
   .bn5-nav{flex:1 1 auto; min-width:0;}
-  .bn5-nav__list{display:flex; align-items:center; gap:clamp(8px, 1.2vw, 20px); flex-wrap:nowrap;}
+  .bn5-nav__list{display:flex; align-items:center; gap:clamp(8px, 1.2vw, 22px); flex-wrap:nowrap;}
   .bn5-nav__item > a{
-    font-size:14px; font-weight:700; padding:8px 2px; position:relative; display:inline-flex; align-items:center; gap:5px;
+    font-size:16px; font-weight:700; padding:8px 2px; position:relative; display:inline-flex; align-items:center; gap:5px;
     white-space:nowrap; transition:color .15s; text-shadow:0 1px 1px rgba(0,0,0,.25);
   }
   #bn5-header .bn5-nav__item > a:hover{color:var(--bn5-accent-2);}
@@ -215,28 +217,59 @@
   #bn5-header .bn5-dropdown li a:hover{background:rgba(255,255,255,.08); color:var(--bn5-accent-2);}
   .bn5-dropdown li a span{color:var(--bn5-text-dim); font-size:12px; font-weight:400; white-space:nowrap;}
 
-  .bn5-header__actions{display:flex; align-items:center; gap:clamp(8px, 1.2vw, 14px); flex-shrink:0;}
-  .bn5-header__contact{display:flex; align-items:center; gap:7px; font-size:15px; font-weight:700; white-space:nowrap; flex-shrink:0;}
-  #bn5-header .bn5-header__contact:hover{color:var(--bn5-accent-2);}
+  .bn5-header__actions{display:flex; align-items:center; gap:clamp(10px, 1.3vw, 16px); flex-shrink:0;}
 
   .bn5-header__icon{
-    width:46px; height:46px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center;
     flex-shrink:0; background:linear-gradient(155deg, var(--bn5-bg-light) 0%, var(--bn5-bg-dark) 100%);
     box-shadow:0 3px 7px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.12) inset, 0 -2px 3px rgba(0,0,0,.25) inset;
     border:1px solid rgba(255,255,255,.1);
     transition:transform .18s, box-shadow .18s;
   }
-  .bn5-header__icon-img{width:38px; height:38px; display:block; object-fit:contain;}
+  .bn5-header__icon-img{width:39px; height:39px; display:block; object-fit:contain;}
   .bn5-header__icon:hover{
     transform:translateY(-2px);
     box-shadow:0 6px 14px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.18) inset;
   }
 
+  .bn5-header__phone{
+    display:flex; align-items:center; flex-shrink:0; position:relative;
+    text-decoration:none; color:inherit;
+  }
+  .bn5-header__phone-badge{transition:transform .3s ease, box-shadow .18s;}
+  .bn5-header__phone:hover .bn5-header__phone-badge{
+    transform:translateX(-3px) translateY(-2px);
+    box-shadow:0 6px 14px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.18) inset;
+  }
+  .bn5-header__phone-number{
+    position:absolute; top:100%; left:50%; margin-top:12px;
+    transform:translate(-50%, -6px); white-space:nowrap;
+    background:linear-gradient(180deg, var(--bn5-bg) 0%, var(--bn5-bg-dark) 100%);
+    border:1px solid rgba(255,255,255,.14); border-radius:10px;
+    padding:10px 18px; font-size:16px; font-weight:700;
+    box-shadow:0 14px 30px rgba(0,0,0,.45), 0 1px 0 rgba(255,255,255,.08) inset;
+    opacity:0; visibility:hidden; pointer-events:none;
+    transition:opacity .22s ease, transform .22s ease, visibility .22s;
+  }
+  .bn5-header__phone-number::before{
+    content:''; position:absolute; top:-6px; left:50%; transform:translateX(-50%);
+    width:12px; height:12px; background:var(--bn5-bg);
+    border-left:1px solid rgba(255,255,255,.14); border-top:1px solid rgba(255,255,255,.14);
+    border-radius:2px 0 0 0; rotate:45deg;
+  }
+  .bn5-header__phone:hover .bn5-header__phone-number,
+  .bn5-header__phone:focus-within .bn5-header__phone-number,
+  .bn5-header__phone:active .bn5-header__phone-number,
+  .bn5-header__phone.is-open .bn5-header__phone-number{
+    opacity:1; visibility:visible; pointer-events:auto; transform:translate(-50%, 0);
+  }
+  #bn5-header .bn5-header__phone:hover .bn5-header__phone-number{color:var(--bn5-accent-2);}
+
   #bn5-header a.bn5-header__cta{
     position:relative; overflow:hidden;
     background:linear-gradient(180deg, var(--bn5-accent-2) 0%, var(--bn5-accent) 55%, var(--bn5-accent-dim) 100%);
-    color:var(--bn5-bg-darker); font-weight:700; font-size:14px;
-    padding:12px 20px; border-radius:8px; white-space:nowrap;
+    color:var(--bn5-bg-darker); font-weight:700; font-size:16px;
+    padding:15px 26px; border-radius:9px; white-space:nowrap;
     box-shadow:0 5px 14px rgba(0,0,0,.3), 0 1px 0 rgba(255,255,255,.6) inset, 0 -2px 4px rgba(0,0,0,.12) inset;
     transition:transform .15s, box-shadow .15s;
   }
@@ -287,16 +320,15 @@
   #bn5-header .bn5-mobile-actions a:not(.bn5-header__cta){font-size:16px; font-weight:700; color:var(--bn5-text-dim); padding:4px 0;}
   .bn5-mobile-actions .bn5-header__cta{text-align:center; display:block;}
 
-  @media (max-width: 1339px){
+  @media (max-width: 1479px){
     .bn5-nav, .bn5-header__actions{display:none;}
     .bn5-header__burger{display:flex;}
     .bn5-mobile-panel{display:block;}
     .bn5-header__inner{height:66px;}
     .bn5-header__logo-img{height:36px;}
   }
-  @media (min-width: 1340px) and (max-width: 1500px){
-    .bn5-header__contact span{font-size:14px;}
-    .bn5-nav__item > a{font-size:13.5px;}
+  @media (min-width: 1480px) and (max-width: 1620px){
+    .bn5-nav__item > a{font-size:14.5px;}
   }
   @media (max-width: 480px){
     .bn5-header__icon{width:40px; height:40px;}
