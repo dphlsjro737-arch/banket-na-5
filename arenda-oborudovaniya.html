@@ -1,13 +1,17 @@
-<!-- ==================== СТРАНИЦА «АРЕНДА ОБОРУДОВАНИЯ» BANKET-NA5.RU — /arenda-oborudovaniya ==================== -->
-<!-- Новая страница (закрывает отклонение № 4). Наличие позиций и цен — по согласованию, поэтому вместо
-     прайс-листа кнопка запроса в мессенджер. Список категорий и условия — плейсхолдер, уточнить -->
+<!-- ==================== СТРАНИЦА «АРЕНДА ОБОРУДОВАНИЯ» + «ГАЛЕРЕЯ» BANKET-NA5.RU — /arenda-oborudovaniya ==================== -->
+<!-- Объединено в одну страницу по запросу: аренда оборудования + галерея реализованных мероприятий,
+     единый сценарий "что предлагаем -> условия -> процесс -> подтверждение работами -> заявка".
+     /galereya как отдельная страница и пункт "Галерея" в шапке теперь дублируют этот раздел —
+     см. комментарий в конце файла, что с этим сделать. -->
+<!-- Наличие позиций и цен на оборудование — по согласованию. Фото в галерее — временные (те же фото залов),
+     подписи и кейсы — условные примеры на замену. -->
 <!-- Фирменные цвета сайта (единые везде): тёмно-бирюзовый #37565d и кремовый #f3ead8 -->
 
 <section class="bn5-ar-hero">
   <div class="bn5-ar-inner">
     <p class="bn5-ar-hero__eyebrow">Дон Экспоцентр — Банкет-Холл</p>
     <h1 class="bn5-ar-hero__title">Аренда оборудования в Ростове-на-Дону</h1>
-    <p class="bn5-ar-hero__text">Посуда, мебель, текстиль и тентовые конструкции — для банкетов, выездных мероприятий и выставок. Доставим, соберём и заберём сами.</p>
+    <p class="bn5-ar-hero__text">Посуда, мебель, текстиль и тентовые конструкции — для банкетов, выездных мероприятий и выставок. Доставим, соберём и заберём сами. Ниже — примеры того, как оборудование выглядит на реальных мероприятиях.</p>
     <div class="bn5-ar-hero__actions">
       <a href="#request-price" class="bn5-ar-btn"><span class="bn5-ar-btn-ring" aria-hidden="true"></span><span class="bn5-ar-btn-fill" aria-hidden="true"></span><span class="bn5-ar-btn-label">Оставить запрос</span></a>
     </div>
@@ -50,6 +54,53 @@
   </div>
 </section>
 
+<section class="bn5-ar-gl__gallery">
+  <div class="bn5-ar-inner">
+    <h2 class="bn5-ar-heading">Оборудование в деле</h2>
+    <p class="bn5-ar-subtext">Фотографии залов с нашим оборудованием и сервировкой — отфильтруйте по формату мероприятия или по залу</p>
+    <div class="bn5-ar-gl__filters">
+      <div class="bn5-ar-gl__filter-group">
+        <button type="button" class="bn5-ar-gl__chip is-active" data-filter-format="all">Все форматы</button>
+        <button type="button" class="bn5-ar-gl__chip" data-filter-format="svadba">Свадьба</button>
+        <button type="button" class="bn5-ar-gl__chip" data-filter-format="korporativ">Корпоратив</button>
+        <button type="button" class="bn5-ar-gl__chip" data-filter-format="den-rozhdeniya">День рождения</button>
+        <button type="button" class="bn5-ar-gl__chip" data-filter-format="furshet">Фуршет</button>
+        <button type="button" class="bn5-ar-gl__chip" data-filter-format="kofe-breyk">Кофе-брейк</button>
+        <button type="button" class="bn5-ar-gl__chip" data-filter-format="detskiy-prazdnik">Детский праздник</button>
+      </div>
+      <div class="bn5-ar-gl__filter-group">
+        <button type="button" class="bn5-ar-gl__chip is-active" data-filter-hall="all">Все залы</button>
+        <button type="button" class="bn5-ar-gl__chip" data-filter-hall="bankethall">Банкетный зал</button>
+        <button type="button" class="bn5-ar-gl__chip" data-filter-hall="ametist">Зал «Аметист»</button>
+        <button type="button" class="bn5-ar-gl__chip" data-filter-hall="vystavochny">Выставочный зал</button>
+      </div>
+    </div>
+    <div class="bn5-ar-gl__grid" id="bn5-ar-gl-grid">
+      <button type="button" class="bn5-ar-gl__item" data-format="svadba" data-hall="bankethall" data-caption="Свадьба — Банкетный зал, 120 гостей, Июнь 2024"><img src="https://www.donexpocentre.ru/media/filer_public/GG/zal_bh.png" alt="Свадьба — Банкетный зал, 120 гостей, Июнь 2024" loading="lazy"><span class="bn5-ar-gl__cap">Свадьба — Банкетный зал, 120 гостей, Июнь 2024</span></button>
+      <button type="button" class="bn5-ar-gl__item" data-format="den-rozhdeniya" data-hall="bankethall" data-caption="День рождения — Банкетный зал, 60 гостей, Март 2024"><img src="https://www.donexpocentre.ru/media/filer_public/GG/zal_bh.png" alt="День рождения — Банкетный зал, 60 гостей, Март 2024" loading="lazy"><span class="bn5-ar-gl__cap">День рождения — Банкетный зал, 60 гостей, Март 2024</span></button>
+      <button type="button" class="bn5-ar-gl__item" data-format="detskiy-prazdnik" data-hall="bankethall" data-caption="Детский праздник — Банкетный зал, 40 гостей, Декабрь 2023"><img src="https://www.donexpocentre.ru/media/filer_public/GG/zal_bh.png" alt="Детский праздник — Банкетный зал, 40 гостей, Декабрь 2023" loading="lazy"><span class="bn5-ar-gl__cap">Детский праздник — Банкетный зал, 40 гостей, Декабрь 2023</span></button>
+      <button type="button" class="bn5-ar-gl__item" data-format="korporativ" data-hall="ametist" data-caption="Корпоратив — Зал «Аметист», 300 гостей, Декабрь 2024"><img src="https://www.donexpocentre.ru/media/filer_public/GG/zal_ametist.png" alt="Корпоратив — Зал «Аметист», 300 гостей, Декабрь 2024" loading="lazy"><span class="bn5-ar-gl__cap">Корпоратив — Зал «Аметист», 300 гостей, Декабрь 2024</span></button>
+      <button type="button" class="bn5-ar-gl__item" data-format="svadba" data-hall="ametist" data-caption="Свадьба — Зал «Аметист», 250 гостей, Август 2024"><img src="https://www.donexpocentre.ru/media/filer_public/GG/zal_ametist.png" alt="Свадьба — Зал «Аметист», 250 гостей, Август 2024" loading="lazy"><span class="bn5-ar-gl__cap">Свадьба — Зал «Аметист», 250 гостей, Август 2024</span></button>
+      <button type="button" class="bn5-ar-gl__item" data-format="kofe-breyk" data-hall="ametist" data-caption="Кофе-брейк — Зал «Аметист», 150 гостей, Апрель 2024"><img src="https://www.donexpocentre.ru/media/filer_public/GG/zal_ametist.png" alt="Кофе-брейк — Зал «Аметист», 150 гостей, Апрель 2024" loading="lazy"><span class="bn5-ar-gl__cap">Кофе-брейк — Зал «Аметист», 150 гостей, Апрель 2024</span></button>
+      <button type="button" class="bn5-ar-gl__item" data-format="furshet" data-hall="vystavochny" data-caption="Фуршет — Выставочный зал, 800 гостей, Октябрь 2024"><img src="https://www.donexpocentre.ru/media/filer_public/GG/zal_vustavochnuyi.png" alt="Фуршет — Выставочный зал, 800 гостей, Октябрь 2024" loading="lazy"><span class="bn5-ar-gl__cap">Фуршет — Выставочный зал, 800 гостей, Октябрь 2024</span></button>
+      <button type="button" class="bn5-ar-gl__item" data-format="korporativ" data-hall="vystavochny" data-caption="Корпоратив — Выставочный зал, 1200 гостей, Декабрь 2024"><img src="https://www.donexpocentre.ru/media/filer_public/GG/zal_vustavochnuyi.png" alt="Корпоратив — Выставочный зал, 1200 гостей, Декабрь 2024" loading="lazy"><span class="bn5-ar-gl__cap">Корпоратив — Выставочный зал, 1200 гостей, Декабрь 2024</span></button>
+      <button type="button" class="bn5-ar-gl__item" data-format="kofe-breyk" data-hall="vystavochny" data-caption="Кофе-брейк — Выставочный зал, 500 гостей, Сентябрь 2024"><img src="https://www.donexpocentre.ru/media/filer_public/GG/zal_vustavochnuyi.png" alt="Кофе-брейк — Выставочный зал, 500 гостей, Сентябрь 2024" loading="lazy"><span class="bn5-ar-gl__cap">Кофе-брейк — Выставочный зал, 500 гостей, Сентябрь 2024</span></button>
+    </div>
+    <p class="bn5-ar-gl__empty" id="bn5-ar-gl-empty" hidden>По этому фильтру пока нет фотографий.</p>
+  </div>
+</section>
+
+<section class="bn5-ar-gl__cases">
+  <div class="bn5-ar-inner">
+    <h2 class="bn5-ar-heading">Реализованные мероприятия</h2>
+    <div class="bn5-ar-gl__cases-grid">
+      <div class="bn5-ar-gl__case"><h3>Свадебный банкет на 250 гостей</h3><div class="bn5-ar-gl__case-meta"><span>Свадьба</span><span>Зал «Аметист»</span><span>250 гостей</span><span>банкет с рассадкой</span></div><p><b>Задача:</b> Провести торжество для большой семьи с классической банкетной рассадкой и вечерней программой.</p><p><b>Результат:</b> Зал был готов за 3 часа до начала, гости отметили слаженную работу официантов и вовремя поданные горячие блюда.</p></div>
+      <div class="bn5-ar-gl__case"><h3>Новогодний корпоратив</h3><div class="bn5-ar-gl__case-meta"><span>Корпоратив</span><span>Выставочный зал</span><span>1 200 гостей</span><span>фуршет</span></div><p><b>Задача:</b> Организовать фуршетное обслуживание для крупной компании с несколькими зонами подачи.</p><p><b>Результат:</b> Развернули 6 фуршетных станций одновременно, обслужили всех гостей без очередей за 40 минут.</p></div>
+      <div class="bn5-ar-gl__case"><h3>Деловая конференция с кофе-брейками</h3><div class="bn5-ar-gl__case-meta"><span>Кофе-брейк</span><span>Зал «Аметист»</span><span>150 гостей</span><span>кофе-брейк между сессиями</span></div><p><b>Задача:</b> Обеспечить 3 кофе-брейка строго между сессиями конференции, не задерживая программу.</p><p><b>Результат:</b> Каждый кофе-брейк был готов за 5 минут до перерыва и убран за 5 минут до начала следующей сессии.</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="bn5-ar-form">
   <div class="bn5-ar-inner bn5-ar-form__inner">
     <div>
@@ -67,5 +118,97 @@
   </div>
 </section>
 
-<style>.bn5-ar-hero,.bn5-ar-categories,.bn5-ar-terms,.bn5-ar-delivery,.bn5-ar-form{--bn5-bg:#37565d;--bn5-bg-light:#436067;--bn5-bg-dark:#2d474c;--bn5-bg-darker:#1e2f33;--bn5-text:#f3ead8;--bn5-text-dim:rgba(243,234,216,.72);--bn5-accent:#f3ead8;--bn5-accent-2:#f4ecdc;--bn5-font-body:Arial,Helvetica,sans-serif;font-family:var(--bn5-font-body);color:var(--bn5-text);box-sizing:border-box}.bn5-ar-hero *,.bn5-ar-categories *,.bn5-ar-terms *,.bn5-ar-delivery *,.bn5-ar-form *{box-sizing:border-box}.bn5-ar-hero a{text-decoration:none;color:inherit}.bn5-ar-inner{max-width:1180px;margin:0 auto;padding:0 24px}.bn5-ar-heading{margin:0 0 10px;font-size:clamp(24px,2.8vw,32px);font-weight:800;text-transform:uppercase}.bn5-ar-subtext{margin:0 0 30px;font-size:16px;color:var(--bn5-text-dim);line-height:1.5}.bn5-ar-hero{background:linear-gradient(180deg,var(--bn5-bg-light) 0%,var(--bn5-bg) 55%,var(--bn5-bg-dark) 100%);padding:74px 0 64px}.bn5-ar-hero__eyebrow{margin:0 0 12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--bn5-accent-2)}.bn5-ar-hero__title{margin:0 0 18px;font-size:clamp(30px,4.4vw,48px);font-weight:800;text-transform:uppercase;line-height:1.1;max-width:820px}.bn5-ar-hero__text{margin:0 0 30px;max-width:620px;font-size:17px;color:var(--bn5-text-dim);line-height:1.5}.bn5-ar-categories{background:var(--bn5-bg-darker);padding:64px 0}.bn5-ar-categories__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.bn5-ar-cat{padding:28px 22px;border-radius:16px;background:linear-gradient(165deg,var(--bn5-bg-light) 0%,var(--bn5-bg-dark) 100%);box-shadow:0 8px 20px rgba(0,0,0,.22)}.bn5-ar-cat svg{color:var(--bn5-accent-2);margin-bottom:14px}.bn5-ar-cat h3{margin:0 0 8px;font-size:17px;font-weight:800}.bn5-ar-cat p{margin:0;font-size:14.5px;color:var(--bn5-text-dim);line-height:1.45}.bn5-ar-terms{background:var(--bn5-bg-dark);padding:64px 0}.bn5-ar-terms__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.bn5-ar-card{display:flex;align-items:flex-start;gap:16px;padding:22px 24px;border-radius:16px;background:linear-gradient(165deg,var(--bn5-bg-light) 0%,var(--bn5-bg-darker) 100%);box-shadow:0 8px 20px rgba(0,0,0,.22)}.bn5-ar-card svg{flex-shrink:0;margin-top:2px;color:var(--bn5-accent-2)}.bn5-ar-card__name{display:block;font-size:17px;font-weight:800}.bn5-ar-card__desc{display:block;margin-top:6px;font-size:14.5px;color:var(--bn5-text-dim);line-height:1.45}.bn5-ar-delivery{background:var(--bn5-bg-darker);padding:64px 0}.bn5-ar-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.bn5-ar-steps li{display:flex;flex-direction:column;gap:12px;padding:22px;border-radius:16px;background:linear-gradient(165deg,var(--bn5-bg-light) 0%,var(--bn5-bg-dark) 100%);box-shadow:0 8px 20px rgba(0,0,0,.22)}.bn5-ar-steps li span{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(243,234,216,.12);color:var(--bn5-accent-2);font-weight:800;font-size:16px}.bn5-ar-steps li b{font-size:16.5px;font-weight:800}.bn5-ar-steps li p{margin:4px 0 0;font-size:14px;color:var(--bn5-text-dim);line-height:1.45}.bn5-ar-form{background:var(--bn5-bg-dark);padding:64px 0 84px}.bn5-ar-form__inner{display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start;justify-content:space-between}.bn5-ar-form .bn5-ar-subtext{margin:0;max-width:380px}.bn5-ar-form__fields{flex:1 1 380px;max-width:460px;display:flex;flex-direction:column;gap:14px}.bn5-ar-form__fields input,.bn5-ar-form__fields textarea{width:100%;padding:15px 18px;border-radius:10px;border:1.5px solid rgba(243,234,216,.25);background:rgba(243,234,216,.06);color:var(--bn5-text);font-family:inherit;font-size:15px;resize:vertical}.bn5-ar-form__fields input::placeholder,.bn5-ar-form__fields textarea::placeholder{color:rgba(243,234,216,.5)}.bn5-ar-form__submit{border:none;cursor:pointer;margin-top:4px;width:100%;justify-content:center}.bn5-ar-btn{position:relative;display:inline-flex;overflow:hidden;border-radius:11px;padding:2px;animation:bn5-ar-btn-glow 4.6s ease-in-out infinite}.bn5-ar-btn-ring{position:absolute;inset:-70%;z-index:0;background:conic-gradient(from 0deg,rgba(55,86,93,0) 0deg,rgba(55,86,93,0) 296deg,rgba(55,86,93,.9) 330deg,#1e2f33 344deg,rgba(55,86,93,.9) 358deg,rgba(55,86,93,0) 360deg);animation:bn5-ar-btn-spin 7s linear infinite}.bn5-ar-btn-fill{position:absolute;inset:2px;z-index:1;border-radius:9px;background:linear-gradient(160deg,rgba(244,236,220,.97) 0%,rgba(243,234,216,.99) 100%);border:1px solid rgba(55,86,93,.15)}.bn5-ar-btn-label{position:relative;z-index:2;display:flex;align-items:center;gap:8px;padding:18px 30px;font-size:17px;font-weight:800;color:var(--bn5-bg);white-space:nowrap}@keyframes bn5-ar-btn-spin{to{transform:rotate(360deg)}}@keyframes bn5-ar-btn-glow{0%,100%{box-shadow:0 0 14px 1px rgba(243,234,216,.13),0 8px 16px rgba(0,0,0,.28)}50%{box-shadow:0 0 24px 4px rgba(243,234,216,.26),0 8px 16px rgba(0,0,0,.28)}}@media (max-width:900px){.bn5-ar-categories__grid{grid-template-columns:repeat(2,1fr)}.bn5-ar-terms__grid{grid-template-columns:1fr}.bn5-ar-steps{grid-template-columns:repeat(2,1fr)}}@media (max-width:560px){.bn5-ar-categories__grid,.bn5-ar-steps{grid-template-columns:1fr}}</style>
-<!-- ==================== /СТРАНИЦА «АРЕНДА ОБОРУДОВАНИЯ» ==================== -->
+<div class="bn5-ar-gl__lightbox" id="bn5-ar-gl-lightbox" aria-hidden="true">
+  <button type="button" class="bn5-ar-gl__lb-close" id="bn5-ar-gl-close" aria-label="Закрыть">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+  <button type="button" class="bn5-ar-gl__lb-arrow bn5-ar-gl__lb-arrow--prev" id="bn5-ar-gl-prev" aria-label="Предыдущее фото">
+    <svg width="14" height="22" viewBox="0 0 11 18" fill="none"><path d="M9.5 1 1.5 9l8 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button type="button" class="bn5-ar-gl__lb-arrow bn5-ar-gl__lb-arrow--next" id="bn5-ar-gl-next" aria-label="Следующее фото">
+    <svg width="14" height="22" viewBox="0 0 11 18" fill="none"><path d="m1.5 1 8 8-8 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <figure class="bn5-ar-gl__lb-figure">
+    <img src="" alt="" id="bn5-ar-gl-lightbox-img">
+    <figcaption id="bn5-ar-gl-lightbox-cap"></figcaption>
+  </figure>
+</div>
+
+<style>.bn5-ar-hero,.bn5-ar-categories,.bn5-ar-terms,.bn5-ar-delivery,.bn5-ar-gl__gallery,.bn5-ar-gl__cases,.bn5-ar-form,.bn5-ar-gl__lightbox{--bn5-bg:#37565d;--bn5-bg-light:#436067;--bn5-bg-dark:#2d474c;--bn5-bg-darker:#1e2f33;--bn5-text:#f3ead8;--bn5-text-dim:rgba(243,234,216,.72);--bn5-accent:#f3ead8;--bn5-accent-2:#f4ecdc;--bn5-font-body:Arial,Helvetica,sans-serif;font-family:var(--bn5-font-body);color:var(--bn5-text);box-sizing:border-box}.bn5-ar-hero *,.bn5-ar-categories *,.bn5-ar-terms *,.bn5-ar-delivery *,.bn5-ar-gl__gallery *,.bn5-ar-gl__cases *,.bn5-ar-form *,.bn5-ar-gl__lightbox *{box-sizing:border-box}.bn5-ar-hero a{text-decoration:none;color:inherit}.bn5-ar-inner{max-width:1180px;margin:0 auto;padding:0 24px}.bn5-ar-heading{margin:0 0 10px;font-size:clamp(24px,2.8vw,32px);font-weight:800;text-transform:uppercase}.bn5-ar-subtext{margin:0 0 30px;font-size:16px;color:var(--bn5-text-dim);line-height:1.5}.bn5-ar-hero{background:linear-gradient(180deg,var(--bn5-bg-light) 0%,var(--bn5-bg) 55%,var(--bn5-bg-dark) 100%);padding:74px 0 64px}.bn5-ar-hero__eyebrow{margin:0 0 12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--bn5-accent-2)}.bn5-ar-hero__title{margin:0 0 18px;font-size:clamp(30px,4.4vw,48px);font-weight:800;text-transform:uppercase;line-height:1.1;max-width:820px}.bn5-ar-hero__text{margin:0 0 30px;max-width:660px;font-size:17px;color:var(--bn5-text-dim);line-height:1.5}.bn5-ar-categories{background:var(--bn5-bg-darker);padding:64px 0}.bn5-ar-categories__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.bn5-ar-cat{padding:28px 22px;border-radius:16px;background:linear-gradient(165deg,var(--bn5-bg-light) 0%,var(--bn5-bg-dark) 100%);box-shadow:0 8px 20px rgba(0,0,0,.22)}.bn5-ar-cat svg{color:var(--bn5-accent-2);margin-bottom:14px}.bn5-ar-cat h3{margin:0 0 8px;font-size:17px;font-weight:800}.bn5-ar-cat p{margin:0;font-size:14.5px;color:var(--bn5-text-dim);line-height:1.45}.bn5-ar-terms{background:var(--bn5-bg-dark);padding:64px 0}.bn5-ar-terms__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.bn5-ar-card{display:flex;align-items:flex-start;gap:16px;padding:22px 24px;border-radius:16px;background:linear-gradient(165deg,var(--bn5-bg-light) 0%,var(--bn5-bg-darker) 100%);box-shadow:0 8px 20px rgba(0,0,0,.22)}.bn5-ar-card svg{flex-shrink:0;margin-top:2px;color:var(--bn5-accent-2)}.bn5-ar-card__name{display:block;font-size:17px;font-weight:800}.bn5-ar-card__desc{display:block;margin-top:6px;font-size:14.5px;color:var(--bn5-text-dim);line-height:1.45}.bn5-ar-delivery{background:var(--bn5-bg-darker);padding:64px 0}.bn5-ar-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.bn5-ar-steps li{display:flex;flex-direction:column;gap:12px;padding:22px;border-radius:16px;background:linear-gradient(165deg,var(--bn5-bg-light) 0%,var(--bn5-bg-dark) 100%);box-shadow:0 8px 20px rgba(0,0,0,.22)}.bn5-ar-steps li span{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(243,234,216,.12);color:var(--bn5-accent-2);font-weight:800;font-size:16px}.bn5-ar-steps li b{font-size:16.5px;font-weight:800}.bn5-ar-steps li p{margin:4px 0 0;font-size:14px;color:var(--bn5-text-dim);line-height:1.45}.bn5-ar-gl__gallery{background:var(--bn5-bg-dark);padding:64px 0}.bn5-ar-gl__cases{background:var(--bn5-bg-darker);padding:64px 0}.bn5-ar-gl__filters{display:flex;flex-direction:column;gap:14px;margin-bottom:34px}.bn5-ar-gl__filter-group{display:flex;flex-wrap:wrap;gap:10px}.bn5-ar-gl__chip{padding:11px 20px;border-radius:999px;border:1.5px solid rgba(243,234,216,.25);background:rgba(243,234,216,.05);color:var(--bn5-text);font-family:inherit;font-size:14.5px;font-weight:700;cursor:pointer;transition:background .18s,border-color .18s,color .18s}.bn5-ar-gl__chip:hover{border-color:rgba(243,234,216,.5)}.bn5-ar-gl__chip.is-active{background:var(--bn5-accent);border-color:var(--bn5-accent);color:var(--bn5-bg)}.bn5-ar-gl__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.bn5-ar-gl__item{position:relative;display:block;padding:0;border:none;cursor:pointer;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:var(--bn5-bg-darker)}.bn5-ar-gl__item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .4s ease}.bn5-ar-gl__item:hover img{transform:scale(1.08)}.bn5-ar-gl__item.is-hidden{display:none}.bn5-ar-gl__cap{position:absolute;left:0;right:0;bottom:0;padding:14px 16px 12px;background:linear-gradient(0deg,rgba(30,47,51,.92) 0%,rgba(30,47,51,0) 100%);font-size:13px;font-weight:700;text-align:left;color:var(--bn5-text)}.bn5-ar-gl__empty{margin:24px 0 0;font-size:15px;color:var(--bn5-text-dim)}.bn5-ar-gl__cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.bn5-ar-gl__case{padding:26px;border-radius:16px;background:linear-gradient(165deg,var(--bn5-bg-light) 0%,var(--bn5-bg-darker) 100%);box-shadow:0 8px 20px rgba(0,0,0,.25)}.bn5-ar-gl__case h3{margin:0 0 12px;font-size:18px;font-weight:800}.bn5-ar-gl__case-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}.bn5-ar-gl__case-meta span{padding:5px 11px;border-radius:999px;background:rgba(243,234,216,.1);font-size:12px;font-weight:700;color:var(--bn5-accent-2)}.bn5-ar-gl__case p{margin:0 0 10px;font-size:14.5px;color:var(--bn5-text-dim);line-height:1.5}.bn5-ar-gl__case p b{color:var(--bn5-text);font-weight:800}.bn5-ar-gl__lightbox{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;background:rgba(15,20,22,.94);padding:40px}.bn5-ar-gl__lightbox.is-open{display:flex}.bn5-ar-gl__lb-figure{max-width:min(1100px,90vw);max-height:88vh;margin:0;display:flex;flex-direction:column;align-items:center;gap:14px}.bn5-ar-gl__lb-figure img{max-width:100%;max-height:76vh;border-radius:10px;object-fit:contain}.bn5-ar-gl__lb-figure figcaption{color:var(--bn5-text);font-size:15px;font-weight:700;text-align:center}.bn5-ar-gl__lb-close{position:absolute;top:24px;right:24px;width:46px;height:46px;border-radius:50%;background:rgba(243,234,216,.1);border:1px solid rgba(243,234,216,.3);color:var(--bn5-text);display:flex;align-items:center;justify-content:center;cursor:pointer}.bn5-ar-gl__lb-arrow{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;background:rgba(243,234,216,.1);border:1px solid rgba(243,234,216,.3);color:var(--bn5-text);display:flex;align-items:center;justify-content:center;cursor:pointer}.bn5-ar-gl__lb-arrow--prev{left:24px}.bn5-ar-gl__lb-arrow--next{right:24px}.bn5-ar-form{background:var(--bn5-bg-dark);padding:64px 0 84px}.bn5-ar-form__inner{display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start;justify-content:space-between}.bn5-ar-form .bn5-ar-subtext{margin:0;max-width:380px}.bn5-ar-form__fields{flex:1 1 380px;max-width:460px;display:flex;flex-direction:column;gap:14px}.bn5-ar-form__fields input,.bn5-ar-form__fields textarea{width:100%;padding:15px 18px;border-radius:10px;border:1.5px solid rgba(243,234,216,.25);background:rgba(243,234,216,.06);color:var(--bn5-text);font-family:inherit;font-size:15px;resize:vertical}.bn5-ar-form__fields input::placeholder,.bn5-ar-form__fields textarea::placeholder{color:rgba(243,234,216,.5)}.bn5-ar-form__submit{border:none;cursor:pointer;margin-top:4px;width:100%;justify-content:center}.bn5-ar-btn{position:relative;display:inline-flex;overflow:hidden;border-radius:11px;padding:2px;animation:bn5-ar-btn-glow 4.6s ease-in-out infinite}.bn5-ar-btn-ring{position:absolute;inset:-70%;z-index:0;background:conic-gradient(from 0deg,rgba(55,86,93,0) 0deg,rgba(55,86,93,0) 296deg,rgba(55,86,93,.9) 330deg,#1e2f33 344deg,rgba(55,86,93,.9) 358deg,rgba(55,86,93,0) 360deg);animation:bn5-ar-btn-spin 7s linear infinite}.bn5-ar-btn-fill{position:absolute;inset:2px;z-index:1;border-radius:9px;background:linear-gradient(160deg,rgba(244,236,220,.97) 0%,rgba(243,234,216,.99) 100%);border:1px solid rgba(55,86,93,.15)}.bn5-ar-btn-label{position:relative;z-index:2;display:flex;align-items:center;gap:8px;padding:18px 30px;font-size:17px;font-weight:800;color:var(--bn5-bg);white-space:nowrap}@keyframes bn5-ar-btn-spin{to{transform:rotate(360deg)}}@keyframes bn5-ar-btn-glow{0%,100%{box-shadow:0 0 14px 1px rgba(243,234,216,.13),0 8px 16px rgba(0,0,0,.28)}50%{box-shadow:0 0 24px 4px rgba(243,234,216,.26),0 8px 16px rgba(0,0,0,.28)}}@media (max-width:900px){.bn5-ar-categories__grid{grid-template-columns:repeat(2,1fr)}.bn5-ar-terms__grid{grid-template-columns:1fr}.bn5-ar-steps{grid-template-columns:repeat(2,1fr)}.bn5-ar-gl__grid,.bn5-ar-gl__cases-grid{grid-template-columns:repeat(2,1fr)}}@media (max-width:620px){.bn5-ar-categories__grid,.bn5-ar-steps,.bn5-ar-gl__grid,.bn5-ar-gl__cases-grid{grid-template-columns:1fr}.bn5-ar-gl__lightbox{padding:16px}.bn5-ar-gl__lb-arrow{width:42px;height:42px}.bn5-ar-gl__lb-arrow--prev{left:8px}.bn5-ar-gl__lb-arrow--next{right:8px}}</style>
+
+<script>(function(){
+var grid = document.getElementById('bn5-ar-gl-grid');
+var items = Array.prototype.slice.call(grid.querySelectorAll('.bn5-ar-gl__item'));
+var emptyMsg = document.getElementById('bn5-ar-gl-empty');
+var activeFormat = 'all';
+var activeHall = 'all';
+function applyFilters(){
+var visibleCount = 0;
+items.forEach(function(item){
+var matchFormat = activeFormat === 'all' || item.dataset.format === activeFormat;
+var matchHall = activeHall === 'all' || item.dataset.hall === activeHall;
+var visible = matchFormat && matchHall;
+item.classList.toggle('is-hidden', !visible);
+if (visible) visibleCount++;
+});
+emptyMsg.hidden = visibleCount > 0;
+}
+document.querySelectorAll('[data-filter-format]').forEach(function(btn){
+btn.addEventListener('click', function(){
+document.querySelectorAll('[data-filter-format]').forEach(function(b){ b.classList.remove('is-active'); });
+btn.classList.add('is-active');
+activeFormat = btn.dataset.filterFormat;
+applyFilters();
+});
+});
+document.querySelectorAll('[data-filter-hall]').forEach(function(btn){
+btn.addEventListener('click', function(){
+document.querySelectorAll('[data-filter-hall]').forEach(function(b){ b.classList.remove('is-active'); });
+btn.classList.add('is-active');
+activeHall = btn.dataset.filterHall;
+applyFilters();
+});
+});
+var lightbox = document.getElementById('bn5-ar-gl-lightbox');
+var lbImg = document.getElementById('bn5-ar-gl-lightbox-img');
+var lbCap = document.getElementById('bn5-ar-gl-lightbox-cap');
+var currentIndex = 0;
+function visibleItems(){
+return items.filter(function(item){ return !item.classList.contains('is-hidden'); });
+}
+function openLightbox(item){
+var list = visibleItems();
+currentIndex = list.indexOf(item);
+showCurrent();
+lightbox.classList.add('is-open');
+lightbox.setAttribute('aria-hidden', 'false');
+}
+function showCurrent(){
+var list = visibleItems();
+if (!list.length) return;
+currentIndex = (currentIndex + list.length) % list.length;
+var item = list[currentIndex];
+var img = item.querySelector('img');
+lbImg.src = img.src;
+lbImg.alt = img.alt;
+lbCap.textContent = item.dataset.caption;
+}
+function closeLightbox(){
+lightbox.classList.remove('is-open');
+lightbox.setAttribute('aria-hidden', 'true');
+}
+items.forEach(function(item){
+item.addEventListener('click', function(){ openLightbox(item); });
+});
+document.getElementById('bn5-ar-gl-close').addEventListener('click', closeLightbox);
+document.getElementById('bn5-ar-gl-prev').addEventListener('click', function(){ currentIndex--; showCurrent(); });
+document.getElementById('bn5-ar-gl-next').addEventListener('click', function(){ currentIndex++; showCurrent(); });
+lightbox.addEventListener('click', function(e){ if (e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', function(e){
+if (!lightbox.classList.contains('is-open')) return;
+if (e.key === 'Escape') closeLightbox();
+if (e.key === 'ArrowLeft'){ currentIndex--; showCurrent(); }
+if (e.key === 'ArrowRight'){ currentIndex++; showCurrent(); }
+});
+})();</script>
+<!-- ==================== /СТРАНИЦА «АРЕНДА ОБОРУДОВАНИЯ» + «ГАЛЕРЕЯ» ==================== -->
