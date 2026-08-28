@@ -1,0 +1,158 @@
+<!-- ==================== БЛОК «ГАЛЕРЕЯ» ГЛАВНОЙ BANKET-NA5.RU ==================== -->
+<!-- Кольцевая (бесконечная) карусель: небольшой формат, ручное пролистывание (стрелки,
+     точки, свайп/драг мышью и пальцем) + автопрокрутка раз в 3 секунды, пауза при наведении.
+     Фото — все ссылки на реальные фотографии площадки, которые были в этом чате
+     (залы + форматы мероприятий), логотипы партнёров сюда не включены — это другая категория. -->
+<!-- Шахматный порядок фона: блок зелёный — между кремовым «Порядок работы» сверху
+     и кремовым «Нам доверяют» снизу. «Порядок работы» уже сам сшивает верхний стык (его низ
+     заканчивается ровно тем же зелёным #2d474c, с которого начинается фон этого блока),
+     поэтому здесь верхнего градиента нет — иначе получился бы двойной переход. Нижний стык
+     (в «Нам доверяют») этот блок делает сам. -->
+<!-- Фирменные цвета сайта (единые везде): тёмно-бирюзовый #37565d и кремовый #f3ead8 -->
+
+<section class="bn5-rg">
+  <div class="bn5-rg__inner">
+    <h2 class="bn5-rg__title">Галерея</h2>
+    <p class="bn5-rg__subtitle">Залы и мероприятия — как это выглядит вживую</p>
+
+    <div class="bn5-rg__carousel" id="bn5-rg-carousel">
+      <div class="bn5-rg__viewport" id="bn5-rg-viewport">
+      <div class="bn5-rg__slide is-active" data-index="0">
+        <img src="https://www.donexpocentre.ru/media/filer_public/GG/zal0.JPG" alt="Банкетный зал" loading="lazy">
+        <span class="bn5-rg__cap">Банкетный зал</span>
+      </div>
+      <div class="bn5-rg__slide" data-index="1">
+        <img src="https://www.donexpocentre.ru/media/filer_public/GG/zal1.jpg" alt="Банкетный зал" loading="lazy">
+        <span class="bn5-rg__cap">Банкетный зал</span>
+      </div>
+      <div class="bn5-rg__slide" data-index="2">
+        <img src="https://www.donexpocentre.ru/media/filer_public/GG/zal2.JPG" alt="Банкетный зал" loading="lazy">
+        <span class="bn5-rg__cap">Банкетный зал</span>
+      </div>
+      <div class="bn5-rg__slide" data-index="3">
+        <img src="https://www.donexpocentre.ru/media/filer_public/GG/zal_bh.png" alt="Банкетный зал" loading="lazy">
+        <span class="bn5-rg__cap">Банкетный зал</span>
+      </div>
+      <div class="bn5-rg__slide" data-index="4">
+        <img src="https://www.donexpocentre.ru/media/filer_public/GG/zal_ametist.png" alt="Зал «Аметист»" loading="lazy">
+        <span class="bn5-rg__cap">Зал «Аметист»</span>
+      </div>
+      <div class="bn5-rg__slide" data-index="5">
+        <img src="https://www.donexpocentre.ru/media/filer_public/GG/zal_vustavochnuyi.png" alt="Выставочный зал" loading="lazy">
+        <span class="bn5-rg__cap">Выставочный зал</span>
+      </div>
+      <div class="bn5-rg__slide" data-index="6">
+        <img src="https://www.donexpocentre.ru/media/filer_public/GG/svadba.JPG" alt="Свадьбы" loading="lazy">
+        <span class="bn5-rg__cap">Свадьбы</span>
+      </div>
+      <div class="bn5-rg__slide" data-index="7">
+        <img src="https://www.donexpocentre.ru/media/filer_public/GG/korporat.jpg" alt="Корпоративы" loading="lazy">
+        <span class="bn5-rg__cap">Корпоративы</span>
+      </div>
+      <div class="bn5-rg__slide" data-index="8">
+        <img src="https://www.donexpocentre.ru/media/filer_public/GG/dr.JPG" alt="Дни рождения и юбилеи" loading="lazy">
+        <span class="bn5-rg__cap">Дни рождения и юбилеи</span>
+      </div>
+      <div class="bn5-rg__slide" data-index="9">
+        <img src="https://www.donexpocentre.ru/media/filer_public/GG/furshet.JPG" alt="Фуршеты" loading="lazy">
+        <span class="bn5-rg__cap">Фуршеты</span>
+      </div>
+      <div class="bn5-rg__slide" data-index="10">
+        <img src="https://www.donexpocentre.ru/media/filer_public/GG/coffee%20break.png" alt="Кофе-брейки и деловые мероприятия" loading="lazy">
+        <span class="bn5-rg__cap">Кофе-брейки и деловые мероприятия</span>
+      </div>
+      <div class="bn5-rg__slide" data-index="11">
+        <img src="https://www.donexpocentre.ru/media/filer_public/GG/dr%20detskii.jpg" alt="Детские праздники" loading="lazy">
+        <span class="bn5-rg__cap">Детские праздники</span>
+      </div>
+      </div>
+
+      <button type="button" class="bn5-rg__arrow bn5-rg__arrow--prev" id="bn5-rg-prev" aria-label="Предыдущее фото">
+        <svg width="12" height="20" viewBox="0 0 11 18" fill="none"><path d="M9.5 1 1.5 9l8 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="bn5-rg__arrow bn5-rg__arrow--next" id="bn5-rg-next" aria-label="Следующее фото">
+        <svg width="12" height="20" viewBox="0 0 11 18" fill="none"><path d="m1.5 1 8 8-8 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <div class="bn5-rg__dots" id="bn5-rg-dots">
+      <button type="button" class="is-active" data-goto="0" aria-label="Фото 1"></button>
+      <button type="button" class="" data-goto="1" aria-label="Фото 2"></button>
+      <button type="button" class="" data-goto="2" aria-label="Фото 3"></button>
+      <button type="button" class="" data-goto="3" aria-label="Фото 4"></button>
+      <button type="button" class="" data-goto="4" aria-label="Фото 5"></button>
+      <button type="button" class="" data-goto="5" aria-label="Фото 6"></button>
+      <button type="button" class="" data-goto="6" aria-label="Фото 7"></button>
+      <button type="button" class="" data-goto="7" aria-label="Фото 8"></button>
+      <button type="button" class="" data-goto="8" aria-label="Фото 9"></button>
+      <button type="button" class="" data-goto="9" aria-label="Фото 10"></button>
+      <button type="button" class="" data-goto="10" aria-label="Фото 11"></button>
+      <button type="button" class="" data-goto="11" aria-label="Фото 12"></button>
+    </div>
+  </div>
+  <div class="bn5-rg__fade bn5-rg__fade--bottom" aria-hidden="true"></div>
+</section>
+
+<style>.bn5-rg{--bn5-bg:#37565d;--bn5-bg-light:#436067;--bn5-bg-dark:#2d474c;--bn5-bg-darker:#1e2f33;--bn5-text:#f3ead8;--bn5-text-dim:rgba(243,234,216,.72);--bn5-accent:#f3ead8;--bn5-accent-2:#f4ecdc;--bn5-font-body:Arial,Helvetica,sans-serif;font-family:var(--bn5-font-body);color:var(--bn5-text);box-sizing:border-box;position:relative;background:linear-gradient(180deg,var(--bn5-bg-dark) 0%,var(--bn5-bg-darker) 100%);padding:72px 24px clamp(190px,24vw,280px);overflow:hidden}.bn5-rg *{box-sizing:border-box}.bn5-rg__inner{position:relative;z-index:1;max-width:760px;margin:0 auto;text-align:center}.bn5-rg__title{margin:0 0 12px;font-size:clamp(28px,3.6vw,42px);font-weight:900;text-transform:uppercase;line-height:1.12;letter-spacing:-.3px}.bn5-rg__subtitle{margin:0 0 40px;font-size:17px;color:var(--bn5-text-dim);line-height:1.55}.bn5-rg__carousel{position:relative}.bn5-rg__viewport{position:relative;width:100%;aspect-ratio:4/3;max-height:440px;border-radius:26px;overflow:hidden;background:rgba(30,47,51,.5);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.22);box-shadow:0 20px 50px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.2);cursor:grab;touch-action:pan-y;user-select:none}.bn5-rg__viewport:active{cursor:grabbing}.bn5-rg__slide{position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .6s ease}.bn5-rg__slide.is-active{opacity:1;pointer-events:auto}.bn5-rg__slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;-webkit-user-drag:none}.bn5-rg__cap{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:34px 22px 16px;text-align:left;background:linear-gradient(0deg,rgba(15,20,22,.86) 0%,rgba(15,20,22,0) 100%);font-size:14.5px;font-weight:800;color:var(--accent-cream,#f3ead8)}.bn5-rg__arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.16);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.4);color:#fff;cursor:pointer;box-shadow:0 8px 20px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.35);transition:background .18s ease,transform .18s ease}.bn5-rg__arrow:hover{background:rgba(255,255,255,.28);transform:translateY(-50%) scale(1.06)}.bn5-rg__arrow--prev{left:-10px}.bn5-rg__arrow--next{right:-10px}.bn5-rg__dots{display:flex;justify-content:center;gap:9px;margin-top:24px}.bn5-rg__dots button{width:9px;height:9px;padding:0;border-radius:50%;border:1px solid rgba(243,234,216,.6);background:rgba(243,234,216,.25);cursor:pointer;transition:background .2s ease,width .2s ease}.bn5-rg__dots button.is-active{background:var(--bn5-accent);width:22px;border-radius:5px}.bn5-rg__fade{position:absolute;left:0;right:0;z-index:0;height:clamp(190px,24vw,280px);pointer-events:none}.bn5-rg__fade--bottom{bottom:0;background:linear-gradient(180deg,rgba(243,234,216,0) 0%,rgba(243,234,216,.02) 10%,rgba(243,234,216,.09) 25%,rgba(243,234,216,.22) 40%,rgba(243,234,216,.42) 55%,rgba(243,234,216,.66) 70%,rgba(243,234,216,.88) 85%,#f3ead8 100%)}@media (max-width:620px){.bn5-rg{padding:56px 18px clamp(150px,30vw,220px)}.bn5-rg__viewport{border-radius:20px;max-height:360px}.bn5-rg__arrow{width:40px;height:40px}.bn5-rg__arrow--prev{left:6px}.bn5-rg__arrow--next{right:6px}}</style>
+
+<script>(function(){
+  var root = document.getElementById('bn5-rg-carousel');
+  if (!root) return;
+  var viewport = document.getElementById('bn5-rg-viewport');
+  var slides = Array.prototype.slice.call(viewport.querySelectorAll('.bn5-rg__slide'));
+  var dots = Array.prototype.slice.call(document.getElementById('bn5-rg-dots').querySelectorAll('button'));
+  var prevBtn = document.getElementById('bn5-rg-prev');
+  var nextBtn = document.getElementById('bn5-rg-next');
+  var current = 0;
+  var timer = null;
+
+  function show(index){
+    slides[current].classList.remove('is-active');
+    dots[current].classList.remove('is-active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('is-active');
+    dots[current].classList.add('is-active');
+  }
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+  function startAutoplay(){
+    stopAutoplay();
+    timer = setInterval(next, 3000);
+  }
+  function stopAutoplay(){
+    if (timer){ clearInterval(timer); timer = null; }
+  }
+
+  nextBtn.addEventListener('click', function(){ next(); startAutoplay(); });
+  prevBtn.addEventListener('click', function(){ prev(); startAutoplay(); });
+  dots.forEach(function(dot){
+    dot.addEventListener('click', function(){
+      show(parseInt(dot.dataset.goto, 10));
+      startAutoplay();
+    });
+  });
+  root.addEventListener('mouseenter', stopAutoplay);
+  root.addEventListener('mouseleave', startAutoplay);
+
+  // свайп/драг мышью и пальцем
+  var dragStartX = null;
+  var dragging = false;
+  function dragStart(x){ dragStartX = x; dragging = true; stopAutoplay(); }
+  function dragEnd(x){
+    if (!dragging || dragStartX === null) return;
+    var delta = x - dragStartX;
+    if (Math.abs(delta) > 40){
+      if (delta < 0) next(); else prev();
+    }
+    dragging = false;
+    dragStartX = null;
+    startAutoplay();
+  }
+  viewport.addEventListener('mousedown', function(e){ dragStart(e.clientX); });
+  window.addEventListener('mouseup', function(e){ if (dragging) dragEnd(e.clientX); });
+  viewport.addEventListener('touchstart', function(e){ dragStart(e.touches[0].clientX); }, {passive:true});
+  viewport.addEventListener('touchend', function(e){ dragEnd(e.changedTouches[0].clientX); });
+
+  startAutoplay();
+})();</script>
+<!-- ==================== /БЛОК «ГАЛЕРЕЯ» ==================== -->
